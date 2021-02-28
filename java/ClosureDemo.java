@@ -14,12 +14,16 @@ public class ClosureDemo {
 		final var foo = 2 * a;
 		final var bar = 3 * b;
 		return c -> {
-			System.out.println("in inner function: a = " + a);
-			System.out.println("in inner function: b = " + b);
-			System.out.println("in inner function: foo = " + foo);
-			System.out.println("in inner function: bar = " + bar);
-			System.out.println("in inner function: c = " + c);
+			innerPrint("a", a);
+			innerPrint("b", b);
+			innerPrint("foo", foo);
+			innerPrint("bar", bar);
+			innerPrint("c", c);
 			System.out.println();
 		};
+	}
+
+	private static void innerPrint(String name, int val) {
+		System.out.println("in inner function: " + name + " = " + val);
 	}
 }
