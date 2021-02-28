@@ -21,10 +21,14 @@ public class CurryingDemo {
 
 	public static Function<Integer, Function<Integer, String>> foo(String a) {
 		return b -> c -> {
-			System.out.println("in innermost function: a = " + a);
-			System.out.println("in innermost function: b = " + b);
-			System.out.println("in innermost function: c = " + c);
+			innerPrint("a", a);
+			innerPrint("b", b);
+			innerPrint("c", c);
 			return a + b + c;
 		};
+	}
+
+	private static <T> void innerPrint(String name, T val) {
+		System.out.println("in inner function: " + name + " = " + val);
 	}
 }
