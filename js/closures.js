@@ -8,7 +8,7 @@ function closuresDemo() {
 function makeClosure(a, b) {
 	const foo = 2 * a;
 	const bar = 3 * b;
-	return function(c) {
+	return c => {
 		console.log(`in "makeClosure": a = ${a}`);
 		console.log(`in "makeClosure": b = ${b}`);
 		console.log(`in "makeClosure": foo = ${foo}`);
