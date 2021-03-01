@@ -1,20 +1,21 @@
 "use strict";
 
 function immutabilityDemo() {
-}
+	let bar = "yes";
+	bar = "no";
+	console.log(bar);
 
-function mutable() {
+	const baz = "howdy";
+	// baz = "later";
+	console.log(baz);
 
-}
-
-function immutable() {
-
-}
-
-function immutableReference() {
 	const obj = { x: 12 };
-	obj.y = 15;
+	obj.x = 15;
 	console.log(obj);
+
+	const other = { get x() { return 12 } };
+	// other.x = 17
+	console.log(other);
 }
 
 console.log("immutability.js loaded");
