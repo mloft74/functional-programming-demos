@@ -6,7 +6,8 @@
 let state = 1700;
 const resetValue = state;
 
-function pureFunctionDemo(addValue) {
+function pureFunctionDemo() {
+	const addValue = 17;
 	const num = impureFunc(addValue);
 	console.log(`num: ${num}`);
 	console.log(`state before: ${resetValue}, state after: ${state}`)
