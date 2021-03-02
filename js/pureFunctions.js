@@ -1,6 +1,7 @@
 "use strict";
 
-// also referential transparency
+// Q: What is a pure function? What are side effects?
+// A: A pure function is a function that has no side effects. Side effects are anything the can change the state of a program.
 
 let state = 1700;
 const resetValue = state;

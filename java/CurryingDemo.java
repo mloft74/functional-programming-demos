@@ -1,5 +1,8 @@
 import java.util.function.Function;
 
+// Q: What is currying?
+// A: Currying is the process of converting a function with n arguments into n functions of 1 argument. Named after Haskell Curry.
+
 public class CurryingDemo {
 	public static void main(String[] args) {
 		final var name = "Brayden";

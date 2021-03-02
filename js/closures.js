@@ -1,8 +1,14 @@
 "use strict";
 
+// Q: What is a closure?
+// A: Closures are an object/function where not only the function is stored, but also the function's scope access.
+
 function closuresDemo() {
 	const closure = makeClosure(12, 16);
 	closure(5);
+
+	const foo = [13, 12, 11, 10];
+	foo.forEach(closure);
 }
 
 function makeClosure(a, b) {

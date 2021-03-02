@@ -1,6 +1,9 @@
 import java.util.function.Consumer;
 import java.util.stream.Stream;
 
+// Q: What is a closure?
+// A: Closures are an object/function where not only the function is stored, but also the function's scope access.
+
 public class ClosureDemo {
 	public static void main(String[] args) {
 		final var closure = makeClosure(12, 16);

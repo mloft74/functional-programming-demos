@@ -1,5 +1,8 @@
 "use strict";
 
+// Q: What is mutability? What is immutability?
+// A: Mutability is the ability to mutate or change/be mutated or changed. Immutability is the opposite of mutability, where something cannot change.
+
 function immutabilityDemo() {
 	let bar = "yes";
 	bar = "no";

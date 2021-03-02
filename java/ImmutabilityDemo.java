@@ -1,3 +1,6 @@
+// Q: What is mutability? What is immutability?
+// A: Mutability is the ability to mutate or change/be mutated or changed. Immutability is the opposite of mutability, where something cannot change.
+
 public class ImmutabilityDemo {
 	public static void main(String[] args) {
 		var bar = "yes";

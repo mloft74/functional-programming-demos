@@ -1,3 +1,6 @@
+// Q: What is a pure function? What are side effects?
+// A: A pure function is a function that has no side effects. Side effects are anything the can change the state of a program.
+
 public class PureFunctionDemo {
 	private static int state = 1700;
 	private static final int resetValue = 1700;
