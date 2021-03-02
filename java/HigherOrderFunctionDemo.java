@@ -1,7 +1,7 @@
 import java.util.function.Function;
 
-// Q: What is a higher order function?
-// A: A higher order function is a function that can take a function as an argument or return a function.
+// Q: What is a higher-order function?
+// A: A higher-order function is a function that can take a function as an argument or return a function.
 
 public class HigherOrderFunctionDemo {
 	public static void main(String[] args) {
