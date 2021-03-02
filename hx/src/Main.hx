@@ -11,11 +11,11 @@ class Main {
         });
     }
 
-    public static function giveFunc(title:String):(String, Int) -> String {
+    private static function giveFunc(title:String):(String, Int) -> String {
         return (name, age) -> '$title $name: $age years old';
     }
 
-    public static function takeFunc(func:(Float, Bool) -> Void):Void {
+    private static function takeFunc(func:(Float, Bool) -> Void):Void {
         func(12.5, true);
     }
 
